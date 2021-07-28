@@ -1,0 +1,17 @@
+{%extends "base.html"%}
+{%load static%}
+
+{%block estilos%}
+    <link rel="stylesheet" href="{%static 'css/login.css'%}">
+{%endblock%}
+
+{%block principal%}
+
+    <form action="" method="post">
+        {%csrf_token%}
+        {{formulario.as_p}}
+
+        <button>Ingresar</button>
+    </form>
+
+{%endblock%}

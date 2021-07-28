@@ -1,0 +1,36 @@
+{%extends "base.html"%}
+{%load static%}
+
+{%block estilos%}
+    <link rel="stylesheet" href="{%static 'css/arte.css'%}">
+{%endblock%}
+
+{%block principal%}
+
+    <h1>ARTE Y CULTURA</h1>
+
+    {% if form %}
+        <h2>Agregar</h2>
+        <form action="" method="POST">
+            {%csrf_token%}
+
+            {{form.as_p}}
+
+            <button>Guardar</button>
+        </form>
+    {%else%}
+        <h2>Lista de Actividades</h2>
+        <a id="actividad" href="arte/add">Nueva Actividad</a>
+
+        <ul id="artes">
+            {%for a in actividadesarte%}
+                <li id="cuadros">
+                    <em>{{a.nombre}}</em>
+                    <p>
+                        {{a.descripcion}}
+                    </p>
+                </li>
+            {%endfor%}
+        </ul>
+    {%endif%}
+{%endblock%}

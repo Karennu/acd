@@ -1,0 +1,104 @@
+h1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 50px;
+    color: darkgoldenrod;
+}
+
+h2 {
+    color: darkgoldenrod;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*LE PONES ESTE ID AL UL*/
+#artes {
+    list-style: none;
+    text-align: center;
+}
+
+/*PONLE ESTE ID AL A DE NUEVA ACTIVIDAD*/
+#actividad {
+    background-color: #8b2323;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: lighter;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+}
+
+#actividad:hover {
+    color: darkgoldenrod;
+}
+
+em {
+    font-size: 25px;
+    font-style: normal;
+}
+
+p {
+    font-size: 17px;
+}
+
+/*ESTE ID SE LO PONES AL LI*/
+#cuadros {
+    border: solid 1px #8b2323;
+    border-radius: 10px;
+    padding: 10px;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 20%;
+    display: inline-block;
+    overflow: hidden;
+    margin-right: 28px;
+    margin-top: 28px;
+}
+
+/*---------------------FORMULARIOS------------------------*/
+
+form {
+    border: solid 1px #8b2323;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+input {
+    border: solid 1px #8b2323;
+    outline: none;
+    align-self: center;
+}
+
+
+button {
+    background-color: #8b2323;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: lighter;
+    font-size: 20px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    outline: none;
+    border: none;
+}
+
+button:hover{
+    color: darkgoldenrod;
+}
+
+select {
+    border: solid 1px #8b2323;
+    outline: none;
+    width: 15%;
+    text-align: center;
+}

@@ -1,0 +1,40 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deporte, Arte y Cultura</title>
+    <link rel="stylesheet" href="{%static 'css/base.css'%}">
+
+    {%block estilos%} {%endblock%}
+</head> 
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/arte">Arte y Cultura</a>
+                </li>
+                <li>
+                    <a href="/deporte">Deportes</a>
+                </li>
+                <li>
+                    <a href="/registro">Registro</a>
+                </li>
+                <li>
+                    <a href="/login">LOG IN</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        {%block principal%}
+
+        {%endblock%}
+    </section>
+</body>
+</html>
